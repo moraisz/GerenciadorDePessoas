@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Turim</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <button onclick="sendJson()" class="header__button">Gravar</button>
+        <button onclick="catchJson()" class="header__button">Ler</button>
+    </header>
+
+    <main class="main">
+        <div class="main__div-name">
+            <p>Nome</p>
+            <input type="text" id="nameInput">
+            <button onclick="addName()">Incluir</button>
+        </div>
+        
+        <div class="main__div-data">
+            <div class="main__div__table" id="div_table">
+                <table class="main__div__table__table" id="tableNames">
+                    <thead>                       
+                        <th colspan="2">Pessoas</th>                      
+                    </thead>
+                </table>
+            </div>
+
+            <div class="main__div__json">
+                <textarea name="" id="jsonOutput" spellcheck="false" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
