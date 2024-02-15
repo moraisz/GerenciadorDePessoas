@@ -225,13 +225,10 @@ function displayJsonInTable(jsonResponse) {
 
   for (var i = 0; i < jsonResponse.pessoas.length; i++) {
     var person = jsonResponse.pessoas[i];
-    console.log(person.nome)
     var { newBody, tbodyId, btnAddId } = createTable(person.nome);
 
     if (person.filhos && person.filhos.length > 0) {
       for (var j = 0; j < person.filhos.length; j++) {
-        console.log(j);
-        console.log(person.filhos[j]);
         createChild(person.filhos[j], newBody);
       }
     }
